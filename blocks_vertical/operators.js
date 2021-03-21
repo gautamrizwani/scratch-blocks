@@ -429,6 +429,46 @@ Blockly.Blocks['operator_round'] = {
   }
 };
 
+Blockly.Blocks['operator_square'] = {
+  /**
+   * Block for squaring a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_square_root'] = {
+  /**
+   * Block for finging Square root of a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE_ROOT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['operator_mathop'] = {
   /**
    * Block for "advanced" math ops on a number.
