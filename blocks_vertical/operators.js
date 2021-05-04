@@ -409,14 +409,34 @@ Blockly.Blocks['operator_mod'] = {
   }
 };
 
-Blockly.Blocks['operator_round'] = {
+Blockly.Blocks['operator_square'] = {
   /**
-   * Block for rounding a numbers.
+   * Block for squaring a numbers.
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.OPERATORS_ROUND,
+      "message0": Blockly.Msg.OPERATORS_SQUARE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_square'] = {
+  /**
+   * Block for finding square_root a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE_ROOT,
       "args0": [
         {
           "type": "input_value",

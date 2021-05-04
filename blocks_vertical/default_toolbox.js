@@ -503,7 +503,14 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="operator_round" id="operator_round">' +
+    '<block type="operator_square" id="operator_square">' +
+      '<value name="NUM">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM"></field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="operator_squareroot" id="operator_squareroot">' +
       '<value name="NUM">' +
         '<shadow type="math_number">' +
           '<field name="NUM"></field>' +
